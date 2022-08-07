@@ -1,5 +1,5 @@
 
-
+#function to remove all records which has been assigned into none of taxonomic group
 
 filter_no_taxa<-function(fileLoc = NULL){
   #Get the initial working directory
