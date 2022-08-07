@@ -1,3 +1,5 @@
+#function to trim the length of sequences 
+
 filter_lentgh<-function(fileLoc = NULL, maxLen = 1000){
   #Get the initial working directory
   start_wd <- getwd()
