@@ -1,5 +1,8 @@
+# a short script to get unique names of molecular markers and sorting them alphabetically. So that we can view them and write them into excel to make a list exact into the same format which is required as input to create_fastas() function of MACER.
 
-mos <- read.delim ("A_Total_Table_long_seq_reduced_long_no_taxa_no_digits.tsv", header=TRUE, sep="\t" )
+
+#red in the file 
+mos <- read.delim ("A_Total_Table.tsv", header=TRUE, sep="\t" )
 
 
 #extracting molecular marker names for next step in MACER   
