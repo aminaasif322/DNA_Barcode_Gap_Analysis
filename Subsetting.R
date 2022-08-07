@@ -21,3 +21,8 @@ subset_mos <- final_data_mos_percent[mos, ]
 subset_mos$Interspecific
 
 view(subset_mos)
+
+#looking for instances that below mentioned no of species is present in data frame and in this way we can say that the inter and intra distances for this species are calculated based on its this much instances, which eventually indicates that how incomplete sampling is.
+
+aphis <- read.delim("Aphis_COI_5P_MAFFT_Trimmed_data_table.dat")
+aphis2 <- aphis %>% filter(aphis$Species == "rumicis")
