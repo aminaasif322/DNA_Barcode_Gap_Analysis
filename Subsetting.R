@@ -26,3 +26,9 @@ view(subset_mos)
 
 aphis <- read.delim("Aphis_COI_5P_MAFFT_Trimmed_data_table.dat")
 aphis2 <- aphis %>% filter(aphis$Species == "rumicis")
+
+#checking no of NA's in both datasets as it represents for how much species we got no result in terms of barcode gap
+
+sum(apply(data_mos, 1, anyNA))
+sum(!complete.cases(data_aphids))
+
