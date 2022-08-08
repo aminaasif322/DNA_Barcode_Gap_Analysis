@@ -32,3 +32,7 @@ aphis2 <- aphis %>% filter(aphis$Species == "rumicis")
 sum(apply(data_mos, 1, anyNA))
 sum(!complete.cases(data_aphids))
 
+# subset dataframe to see no of records who has maximum intraspecific distance less than cutoff 2%
+mos2percent <- final_data_mos_percent$Intraspecific < 2
+subset_mos2percent <- final_data_mos_percent[mos2percent, ]
+
