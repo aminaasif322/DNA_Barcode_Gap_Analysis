@@ -63,6 +63,6 @@ theme_update(plot.title = element_text(hjust = 0.5))
 figure <- ggarrange(p_culex + rremove("ylab") + rremove("xlab"), p_aphis + rremove("ylab") + rremove("xlab")) # remove axis labels from plots
 
 annotate_figure(figure, left = textGrob("Frequency", rot = 90, vjust = 1, gp = gpar(cex = 1.3)),
-                bottom = textGrob("Density", gp = gpar(cex = 1.3)))
+                bottom = textGrob("Maximum Intraspecific and Minimum Interspecific", gp = gpar(cex = 1.3)))
 
 
