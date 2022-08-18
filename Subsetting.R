@@ -36,3 +36,10 @@ sum(!complete.cases(data_aphids))
 mos2percent <- final_data_mos_percent$Intraspecific < 2
 subset_mos2percent <- final_data_mos_percent[mos2percent, ]
 
+#check for between barcode gap
+mos6 <- final_data_mos_percent$Barcode_Gap == "YES"
+
+subset_mos6 <- final_data_mos_percent[mos6, ]
+
+nrow(subset_mos6)
+
